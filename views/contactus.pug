@@ -1,0 +1,23 @@
+extends base.pug
+block style 
+     style 
+         include ../static/style.css
+         include ../static/contact.css 
+block content 
+    body 
+       nav#navbar 
+         ul
+           img(src="../static/img/logo.png", alt="")
+           li #[a(href="/") Home]
+           li #[a(href="/") About us]
+           li #[a(href="/") Services]
+           li #[a(href="/views/contactus.pug") Contact us]
+           li #[a(href="/") Our personal Blog]
+         form(action="#" method="post") 
+           input(type="text" class="inputs" name="fname" placeholder="Abdullah")
+           input(type="email" class="inputs" name="email" placeholder="abdullah@gmail.com")
+           input(type="tel" class="inputs" name="phone" placeholder="+923358178730")
+           input(type="text" class="inputs" name="male" id="male" placeholder="male")
+           input(type="text" class="inputs" name="female" id="female" placeholder="female")
+           button(type="submit") submit
+    

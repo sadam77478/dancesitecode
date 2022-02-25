@@ -1,0 +1,22 @@
+doctype html 
+html 
+   head 
+     title 
+     block script 
+     script(src="../static/index.js") 
+     block style
+
+   body 
+     block content 
+       nav#navbar 
+         ul
+           img(src="../static/img/logo.png", alt="")
+           li #[a(href="/") Home]
+           li #[a(href="/") About us]
+           li #[a(href="/") Services]
+           li #[a(href="/contact") Contact us]
+           li #[a(href="/") Our personal Blog]
+        
+     block foot 
+        footer#footer
+          p Code with sadam khan &copy 2022 all rights reserved
